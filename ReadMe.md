@@ -91,7 +91,12 @@ Time: 0.336
 OK (1 test)
 ```
 
-## Example: Cargo shipping
+## Case study: Cargo shipping
+
+### Procedure
+First read the file [src/test/java/jda/modules/patterndom/test/cargoshipping/ReadMe.md](src/test/java/jda/modules/patterndom/test/cargoshipping/ReadMe.md) of the CargoShipping case study for the procedure for how to work with this case study.
+
+## Execute the TG of the case study
 To execute the pre-defined TG for the CargoShipping case study: 
 
 ```
