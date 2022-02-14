@@ -94,21 +94,25 @@ OK (1 test)
 ## Case study: Cargo shipping
 
 ### Assets
-1. Domain model: $DOM = `jda.modules.patterndom.test.dom.cargoshipping.domain.model.cargo`
+1. Domain model (available in the `src` folder): $DOM = `jda.modules.patterndom.test.dom.cargoshipping.domain.model.cargo`
    1. 4 key domain classes: `Cargo`, `Delivery`, `Itinerary`, `RouteSpecification`
    2. Code adaption for class `Cargo`: `Cargo_CodeAdaptationAfterTransform.java`
 2. `TGCargoShipping` app: $APP = `jda.modules.patterndom.test.cargoshipping.TGCargoShipping`
 3. Unit test: `jda.modules.patterndom.test.cargoshipping.CargoTest`
 
 ### Procedure
-1. Copy 4 key domain classes from subpackage `bak` of $DOM into $DOM, overriding existing classes
+1. (If not running the first time) Copy 4 key domain classes from subpackage `bak` of $DOM into $DOM, overriding existing classes
 2. Execute $APP to apply the p-models, generating 4 new classes in the `output` folder of the project
 ```
 test# java -cp ./jda-dompattern-5.4-SNAPSHOT-test-jar-with-dependencies.jar org.junit.runner.JUnitCore jda.modules.patterndom.test.cargoshipping.TGCargoShipping
 ```
 3. Copy the 4 new classes back into $DOM, overriding the existing classes
-4. Apply the code adaptation in the file `Cargo_CodeAdaptationAfterTransform.java` (located under the folder `src`). The code blocks to be copied are marked with the starting comment `// NEW`
-5. Run JUnit test `jda.modules.patterndom.test.cargoshipping.CargoTest` to observe that all tests are passed
+4. Adapt the code of `Cargo.java` by apply the code adaptation in the file `Cargo_CodeAdaptationAfterTransform.java`. The code blocks to be copied are marked with the starting comment `// NEW`
+5. Test the transformed class Cargo of the output (transformed) model:
+  1. Create a new IDE project:
+    - src folder = folder `src`
+    - Referenced library: add `jda-dompattern-5.4-SNAPSHOT-test-jar-with-dependencies.jar`
+  2. Run JUnit test `jda.modules.patterndom.test.cargoshipping.CargoTest` to observe that all tests are passed
 
 ### Expected output
 ```
