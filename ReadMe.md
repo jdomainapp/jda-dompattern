@@ -1,5 +1,5 @@
-JDA Module: Domain modelling patterns
-=======
+JDA `module-dompattern`: DDD patterns
+==============
 
 A repository for DDD patterns specification and application.
 
