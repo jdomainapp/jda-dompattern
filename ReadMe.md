@@ -1,7 +1,7 @@
 JDA Module: Domain modelling patterns
 =======
 
-A repository of domain modelling patterns defined in DCSL.
+A repository for DDD patterns specification and application.
 
 # Source code structure
 1. `src/main/java`: pattern assets and shared APIs. These are used in the pattern definition files.
