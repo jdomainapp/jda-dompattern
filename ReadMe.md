@@ -110,8 +110,8 @@ test# java -cp ./jda-dompattern-5.4-SNAPSHOT-test-jar-with-dependencies.jar org.
 4. Adapt the code of `Cargo.java` by apply the code adaptation in the file `Cargo_CodeAdaptationAfterTransform.java`. The code blocks to be copied are marked with the starting comment `// NEW`
 5. Test the transformed class Cargo of the output (transformed) model:
   1. Create a new IDE project:
-    - src folder = folder `src`
-    - Referenced library: add `jda-dompattern-5.4-SNAPSHOT-test-jar-with-dependencies.jar`
+     - src folder = folder `src`
+     - Referenced library: add `jda-dompattern-5.4-SNAPSHOT-test-jar-with-dependencies.jar`
   2. Run JUnit test `jda.modules.patterndom.test.cargoshipping.CargoTest` to observe that all tests are passed
 
 ### Expected output
